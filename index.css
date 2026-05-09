@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Tailwind v4 এ ম্যানুয়াল ডার্ক মোড (Class-based) সক্রিয় করার জন্য */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* আপনার এজেন্সির থিম অনুযায়ী কিছু কাস্টম কালার চাইলে এখানে যোগ করতে পারেন */
+  --color-primary: #1e40af;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+}
+
+/* গ্লোবাল স্টাইলস */
+@layer base {
+  body {
+    @apply bg-white text-gray-900 transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+/* স্মুথ স্ক্রলিং এবং অন্যান্য ইউটিলিটি */
+html {
+  scroll-behavior: smooth;
+}
+

@@ -1,0 +1,18 @@
+{
+  "name": "mern-news-assignment",
+  "version": "1.0.0",
+  "description": "MERN News Portal Assignment",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Farhana Khatun",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6"
+  }
+}
+
